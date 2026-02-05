@@ -3,38 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Page News</title>
+    <title>The Page News | Investigative Journalism</title>
     <style>
-        /* Modern Newspaper Styling */
-        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; color: #333; }
+        /* Base Styles */
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 0; background-color: #f4f4f4; color: #333; }
         
-        /* Header & Logo Area */
-        header { text-align: center; background: white; padding: 30px; border-bottom: 5px solid #222; margin-bottom: 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        header img { max-width: 250px; height: auto; margin-bottom: 10px; }
-        header h1 { margin: 0; font-family: 'Georgia', serif; font-size: 2.5rem; color: #b71c1c; text-transform: uppercase; letter-spacing: 2px; }
+        /* Breaking News Bar */
+        .breaking-news { background: #b71c1c; color: white; padding: 8px 0; font-weight: bold; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
+        .breaking-news span { display: inline-block; padding-left: 100%; animation: marquee 20s linear infinite; }
+        @keyframes marquee { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
+
+        /* Header */
+        header { text-align: center; background: white; padding: 30px 20px; border-bottom: 5px solid #222; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header img { max-width: 220px; height: auto; margin-bottom: 10px; }
+        header h1 { margin: 0; font-family: 'Georgia', serif; font-size: 2.8rem; color: #222; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Sponsor Banner */
+        .sponsor-banner { background: #fff; border: 1px dashed #bbb; text-align: center; padding: 15px; margin: 20px auto; max-width: 728px; border-radius: 4px; }
+        .sponsor-label { font-size: 0.6rem; color: #999; text-transform: uppercase; display: block; margin-bottom: 5px; }
 
         /* Article Cards */
-        .container { display: flex; flex-direction: column; gap: 25px; }
+        .container { padding: 20px; display: flex; flex-direction: column; gap: 25px; }
         .news-card { background: white; padding: 30px; border-radius: 8px; border-left: 8px solid #b71c1c; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s; }
-        .news-card:hover { transform: translateY(-5px); }
+        .news-card:hover { transform: translateY(-5px); border-left-color: #222; }
         
-        .tag { background: #b71c1c; color: white; padding: 4px 12px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; border-radius: 20px; display: inline-block; margin-bottom: 15px; }
-        .news-card h2 { margin: 0 0 15px 0; font-family: 'Georgia', serif; font-size: 1.8rem; line-height: 1.2; }
-        .news-card p { color: #555; margin-bottom: 20px; }
+        .tag { background: #b71c1c; color: white; padding: 4px 12px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; border-radius: 20px; display: inline-block; margin-bottom: 15px; }
+        .news-card h2 { margin: 0 0 15px 0; font-family: 'Georgia', serif; font-size: 1.8rem; line-height: 1.2; color: #111; }
+        .news-card p { color: #555; margin-bottom: 20px; font-size: 1.05rem; }
         
         .btn { display: inline-block; padding: 12px 25px; background: #222; color: white; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.9rem; }
         .btn:hover { background: #b71c1c; }
 
-        footer { text-align: center; margin-top: 50px; padding: 20px; color: #888; border-top: 1px solid #ddd; }
+        footer { text-align: center; margin-top: 50px; padding: 40px 20px; color: #888; border-top: 1px solid #ddd; background: white; }
     </style>
 </head>
 <body>
 
+    <div class="breaking-news">
+        <span>LATEST: Auditor-General exposes GH¢8.8 Billion irregularities... SECURITY ALERT: Armed networks growing in Galamsey zones... WATCH: Energy sector investigation live... </span>
+    </div>
+
     <header>
-        <img src="THE-PAGE-LOGO.jpg" alt="The Page Logo">
+        <img src="logo.png" alt="The Page Logo">
         <h1>The Page News</h1>
         <p><em>Truth, Accountability, Journalism</em></p>
     </header>
+
+    <div class="sponsor-banner">
+        <span class="sponsor-label">ADVERTISEMENT</span>
+        <a href="mailto:yourname@email.com?subject=Advertising Inquiry">
+            <p style="margin:0; color:#b71c1c; font-weight:bold;">ADVERTISE HERE: Connect with Ghana's decision-makers.</p>
+        </a>
+    </div>
 
     <div class="container">
         <div class="news-card">
@@ -53,7 +73,9 @@
     </div>
 
     <footer>
-        &copy; 2026 The Page News | Created by Adam Ibrahim
+        <p><strong>The Page News</strong></p>
+        <p>&copy; 2026 | Created by Adam Ibrahim</p>
+        <p><small>For tips and sponsorship: yourname@email.com</small></p>
     </footer>
 
 </body>
