@@ -5,30 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Page News</title>
     <style>
-        body { font-family: 'Georgia', serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        header { text-align: center; border-bottom: 3px solid #222; margin-bottom: 30px; padding-bottom: 10px; }
-        .news-box { background: white; padding: 25px; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 20px; }
-        h2 { color: #b71c1c; margin-top: 0; }
-        .btn { display: inline-block; background: #b71c1c; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 3px; margin-top: 15px; }
-        .tag { background: #333; color: white; padding: 2px 8px; font-size: 0.7rem; text-transform: uppercase; vertical-align: middle; }
+        /* Modern Newspaper Styling */
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; color: #333; }
+        
+        /* Header & Logo Area */
+        header { text-align: center; background: white; padding: 30px; border-bottom: 5px solid #222; margin-bottom: 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header img { max-width: 250px; height: auto; margin-bottom: 10px; }
+        header h1 { margin: 0; font-family: 'Georgia', serif; font-size: 2.5rem; color: #b71c1c; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* Article Cards */
+        .container { display: flex; flex-direction: column; gap: 25px; }
+        .news-card { background: white; padding: 30px; border-radius: 8px; border-left: 8px solid #b71c1c; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s; }
+        .news-card:hover { transform: translateY(-5px); }
+        
+        .tag { background: #b71c1c; color: white; padding: 4px 12px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; border-radius: 20px; display: inline-block; margin-bottom: 15px; }
+        .news-card h2 { margin: 0 0 15px 0; font-family: 'Georgia', serif; font-size: 1.8rem; line-height: 1.2; }
+        .news-card p { color: #555; margin-bottom: 20px; }
+        
+        .btn { display: inline-block; padding: 12px 25px; background: #222; color: white; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.9rem; }
+        .btn:hover { background: #b71c1c; }
+
+        footer { text-align: center; margin-top: 50px; padding: 20px; color: #888; border-top: 1px solid #ddd; }
     </style>
 </head>
 <body>
-    <header><h1>THE PAGE NEWS</h1></header>
 
-    <div class="news-box">
-        <span class="tag">Security Alert</span>
-        <h2>Galamsey's Ticking Time Bomb: Arms Proliferation</h2>
-        <p>A proactive de-weaponization strategy is needed before illegal firearms transition from mining pits to urban centers...</p>
-        <a href="galamsey-arms-proliferation.html" class="btn">READ FULL ARTICLE →</a>
+    <header>
+        <img src="logo.png" alt="The Page Logo">
+        <h1>The Page News</h1>
+        <p><em>Truth, Accountability, Journalism</em></p>
+    </header>
+
+    <div class="container">
+        <div class="news-card">
+            <span class="tag">Security Alert</span>
+            <h2>GALAMSEY'S TICKING TIME BOMB: ARMS PROLIFERATION</h2>
+            <p>A proactive de-weaponization strategy is needed before illegal firearms transition from mining pits to urban centers...</p>
+            <a href="galamsey-arms-proliferation.html" class="btn">READ FULL ARTICLE →</a>
+        </div>
+
+        <div class="news-card">
+            <span class="tag">Investigative</span>
+            <h2>SCANDAL IN THE ENERGY SECTOR: GH¢8.8 BILLION HOLE EXPOSED</h2>
+            <p>The 2023 Auditor-General's Report reveals systemic corruption within ECG and GNPC...</p>
+            <a href="scandal-energy-sector.html" class="btn">READ FULL ARTICLE →</a>
+        </div>
     </div>
 
-    <div class="news-box">
-        <span class="tag">Investigative</span>
-        <h2>SCANDAL IN THE ENERGY SECTOR: GH¢8.8 BILLION HOLE EXPOSED</h2>
-        <p>The 2023 Auditor-General's Report reveals systemic corruption within ECG and GNPC...</p>
-        <a href="scandal-energy-sector.html" class="btn">READ FULL ARTICLE →</a>
-    </div>
+    <footer>
+        &copy; 2026 The Page News | Created by Adam Ibrahim
+    </footer>
 
 </body>
 </html>
