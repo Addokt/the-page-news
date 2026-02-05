@@ -1,4 +1,4 @@
----
+<a href="articles/scandal-energy-sector.md">New: Scandal in the Energy Sector Exposed</a>
 title: "SCANDAL IN THE ENERGY SECTOR: GH¢8.8 BILLION HOLE EXPOSED"
 author: "Adam Ibrahim"
 date: "2026-02-05"
