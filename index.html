@@ -3,44 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Page News | Investigative Journalism</title>
+    <title>The Page News | Truth & Perspective</title>
     <style>
-        /* Base Styles */
         body { font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 0; background-color: #f4f4f4; color: #333; }
-        
-        /* Breaking News Bar */
-        .breaking-news { background: #b71c1c; color: white; padding: 8px 0; font-weight: bold; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
-        .breaking-news span { display: inline-block; padding-left: 100%; animation: marquee 20s linear infinite; }
+        .breaking-news { background: #b71c1c; color: white; padding: 8px 0; font-weight: bold; overflow: hidden; white-space: nowrap; font-size: 0.85rem; }
+        .breaking-news span { display: inline-block; padding-left: 100%; animation: marquee 25s linear infinite; }
         @keyframes marquee { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
-
-        /* Header */
-        header { text-align: center; background: white; padding: 30px 20px; border-bottom: 5px solid #222; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        header img { max-width: 220px; height: auto; margin-bottom: 10px; }
-        header h1 { margin: 0; font-family: 'Georgia', serif; font-size: 2.8rem; color: #222; text-transform: uppercase; letter-spacing: 1px; }
-
-        /* Sponsor Banner */
-        .sponsor-banner { background: #fff; border: 1px dashed #bbb; text-align: center; padding: 15px; margin: 20px auto; max-width: 728px; border-radius: 4px; }
-        .sponsor-label { font-size: 0.6rem; color: #999; text-transform: uppercase; display: block; margin-bottom: 5px; }
-
-        /* Article Cards */
+        header { text-align: center; background: white; padding: 40px 20px; border-bottom: 5px solid #222; }
+        header img { max-width: 280px; height: auto; margin-bottom: 10px; }
         .container { padding: 20px; display: flex; flex-direction: column; gap: 25px; }
-        .news-card { background: white; padding: 30px; border-radius: 8px; border-left: 8px solid #b71c1c; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.2s; }
-        .news-card:hover { transform: translateY(-5px); border-left-color: #222; }
-        
-        .tag { background: #b71c1c; color: white; padding: 4px 12px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; border-radius: 20px; display: inline-block; margin-bottom: 15px; }
-        .news-card h2 { margin: 0 0 15px 0; font-family: 'Georgia', serif; font-size: 1.8rem; line-height: 1.2; color: #111; }
-        .news-card p { color: #555; margin-bottom: 20px; font-size: 1.05rem; }
-        
-        .btn { display: inline-block; padding: 12px 25px; background: #222; color: white; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 0.9rem; }
-        .btn:hover { background: #b71c1c; }
-
-        footer { text-align: center; margin-top: 50px; padding: 40px 20px; color: #888; border-top: 1px solid #ddd; background: white; }
+        .news-card { background: white; padding: 30px; border-radius: 8px; border-left: 8px solid #b71c1c; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .tag { background: #b71c1c; color: white; padding: 4px 12px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; border-radius: 4px; display: inline-block; margin-bottom: 15px; }
+        .news-card h2 { margin: 0 0 15px 0; font-family: 'Georgia', serif; font-size: 1.8rem; line-height: 1.2; }
+        .btn { display: inline-block; padding: 12px 25px; background: #222; color: white; text-decoration: none; font-weight: bold; border-radius: 4px; }
+        .sponsor-banner { background: #fff; border: 1px dashed #bbb; text-align: center; padding: 15px; margin: 20px; }
     </style>
 </head>
 <body>
 
     <div class="breaking-news">
-        <span>LATEST: Auditor-General exposes GH¢8.8 Billion irregularities... SECURITY ALERT: Armed networks growing in Galamsey zones... WATCH: Energy sector investigation live... </span>
+        <span>LATEST: Adam Ibrahim on Perceptual Selectivity... Auditor-General exposes GH¢8.8 Billion irregularities... Security Alert: Galamsey arms proliferation... </span>
     </div>
 
     <header>
@@ -49,34 +31,35 @@
         <p><em>Truth, Accountability, Journalism</em></p>
     </header>
 
-    <div class="sponsor-banner">
-        <span class="sponsor-label">ADVERTISEMENT</span>
-        <a href="mailto:yourname@email.com?subject=Advertising Inquiry">
-            <p style="margin:0; color:#b71c1c; font-weight:bold;">ADVERTISE HERE: Connect with Ghana's decision-makers.</p>
-        </a>
-    </div>
-
     <div class="container">
+        <div class="news-card" style="border-left-color: #222;">
+            <span class="tag" style="background: #222;">Perspective</span>
+            <h2>The Filtered Reality: Mastering Perceptual Selectivity</h2>
+            <p>The human experience is built on a paradox: we all inhabit one objective world, yet each of us lives within a separate, personal reality...</p>
+            <a href="perceptual-selectivity.html" class="btn">READ FULL ARTICLE →</a>
+        </div>
+
+        <div class="sponsor-banner">
+            <small style="color:#999">ADVERTISEMENT</small><br>
+            <a href="mailto:yourname@email.com" style="color:#b71c1c; text-decoration:none; font-weight:bold;">Sponsor The Page News - Inquire Here</a>
+        </div>
+
         <div class="news-card">
             <span class="tag">Security Alert</span>
-            <h2>GALAMSEY'S TICKING TIME BOMB: ARMS PROLIFERATION</h2>
-            <p>A proactive de-weaponization strategy is needed before illegal firearms transition from mining pits to urban centers...</p>
+            <h2>GALAMSEY'S TICKING TIME BOMB</h2>
+            <p>A proactive de-weaponization strategy is needed before illegal firearms transition to urban centers...</p>
             <a href="galamsey-arms-proliferation.html" class="btn">READ FULL ARTICLE →</a>
         </div>
 
         <div class="news-card">
             <span class="tag">Investigative</span>
-            <h2>SCANDAL IN THE ENERGY SECTOR: GH¢8.8 BILLION HOLE EXPOSED</h2>
+            <h2>SCANDAL IN THE ENERGY SECTOR</h2>
             <p>The 2023 Auditor-General's Report reveals systemic corruption within ECG and GNPC...</p>
             <a href="scandal-energy-sector.html" class="btn">READ FULL ARTICLE →</a>
         </div>
     </div>
 
-    <footer>
-        <p><strong>The Page News</strong></p>
-        <p>&copy; 2026 | Created by Adam Ibrahim</p>
-        <p><small>For tips and sponsorship: yourname@email.com</small></p>
-    </footer>
-
 </body>
 </html>
+    
+
